@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Liberation-Sans';
-  src: url('src/assets/fonts/libsans/LiberationSans-Regular.ttf') format('truetype');
+  src: url('../src/assets/fonts/libsans/LiberationSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Liberation-Sans';
-  src: url('src/assets/fonts/libsans/LiberationSans-Bold.ttf') format('truetype');
+  src: url('../src/assets/fonts/libsans/LiberationSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
