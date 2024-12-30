@@ -117,7 +117,7 @@ function CreateAccount() {
                         </div>
 
                         <div className='input-container'>
-                            <input name='id' type='text' className='input' autoFocus={true} autoComplete="off" value={accountInfo.id}
+                            <input name='id' type='text' className='input' autoFocus={true} autoComplete="new-id" value={accountInfo.id}
                                    onChange={handleInputChange}/>
                             <div className='input-label'>{dataText.userID}</div>
                             <img src={id} className='input-icon' alt='user-id'/>
@@ -128,7 +128,7 @@ function CreateAccount() {
 
                         <div className='input-container'>
                             <input name='password' type={isPasswordVisible ? 'text' : 'password'} className='input'
-                                   autoComplete="off" value={accountInfo.password} onChange={handleInputChange}/>
+                                   autoComplete="new-password" value={accountInfo.password} onChange={handleInputChange}/>
                             <div className='input-label'>{dataText.password}</div>
                             <img src={isPasswordVisible ? eye : hide} onClick={toggleVisiblePassword} className='eye'
                                  alt='eye'/>
@@ -143,7 +143,7 @@ function CreateAccount() {
                         </div>
 
                         <div className='input-container'>
-                            <input name='name' type='text' className='input' autoComplete="off" value={accountInfo.name}
+                            <input name='name' type='text' className='input' autoComplete="new-name" value={accountInfo.name}
                                    onChange={handleInputChange}/>
                             <div className='input-label'>{dataText.name}</div>
                             <img src={name} className='input-icon' alt='name'/>
@@ -158,7 +158,7 @@ function CreateAccount() {
 
                         <div className='input-container'>
                             <input name='email' type='email' className='input' style={{width: '65%'}}
-                                   autoComplete="off" value={accountInfo.email}
+                                   autoComplete="new-email" value={accountInfo.email}
                                    onChange={handleInputChange}/>
                             <div className='input-label'>{dataText.email}</div>
                             <div className='resend'>{dataText.resend}</div>
@@ -169,7 +169,7 @@ function CreateAccount() {
                         </div>
 
                         <div className='input-container input-container-code'>
-                            <input name='code' type='text' className='input' autoComplete="off" value={accountInfo.code}
+                            <input name='code' type='text' className='input' autoComplete="new-code" value={accountInfo.code}
                                    onChange={handleInputChange}/>
                             <div className='input-label'>{dataText.code}</div>
                             <img src={email} className='input-icon' alt='code'/>
